@@ -1,3 +1,14 @@
+// Toggle the Box
+const changeBox = document.querySelector("#box");
+
+changeBox.addEventListener("click", function (event) {
+       if (event.target.style.backgroundColor === "blue") {
+           event.target.style.backgroundColor = "white";
+       } else {
+           event.target.style.backgroundColor = "blue";
+       }
+   });
+
 // Mirror
 const mirrorText = document.querySelector('#mirrorText');
 const input = document.querySelector('input');
